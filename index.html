@@ -1,6 +1,6 @@
-<head>
+<html><head>
   <link rel="icon" type="image/png" href="https://www.xeno.onl/images/xeno.png">
-  <title>Xeno| StepLess downloader</title>
+  <title>Xeno | Stepless downloader</title>
   <style>
     body {
       background-color: #071a38;
@@ -10,7 +10,6 @@
       text-align: center;
     }
 
-    /* Fixed top bar */
     .top-bar {
       position: fixed;
       top: 0;
@@ -22,14 +21,13 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
       z-index: 1000;
     }
 
     .top-bar img {
       width: 60px;
       height: auto;
-      mix-blend-mode: lighten; /* removes black box effect */
+      mix-blend-mode: lighten;
     }
 
     .top-bar h1 {
@@ -38,31 +36,69 @@
       letter-spacing: 2px;
     }
 
-    /* Space so content doesn’t go under top bar */
     .content {
       padding-top: 120px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 40px;
     }
 
-    /* Bigger Download button */
+    .middle-image {
+      position: relative;
+      width: 100%;
+      max-height: 80vh;
+      overflow: hidden;
+    }
+
+    .middle-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay-text {
+      font-size: 130px;
+      font-family: "Lucida Console", monospace;
+      color: white;
+      text-shadow: 0 0 10px #5953c9, 0 0 20px #5953c9;
+    }
+
     .download-btn {
       display: inline-block;
-      padding: 20px 40px; /* increased padding */
+      padding: 20px 40px;
       background-color: #5953c9;
       color: white;
       text-decoration: none;
-      border-radius: 10px; /* slightly more rounded */
+      border-radius: 10px;
       font-family: sans-serif;
-      font-size: 24px; /* bigger font */
-      margin-top: 60px;
-      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+      font-size: 24px;
+      transition: background-color 0.2s ease;
     }
 
     .download-btn:hover {
       background-color: #1d13d6;
-      box-shadow: 0 0 15px #5953c9;
     }
   </style>
 </head>
+<body>
+
+  <div class="top-bar">
+    <img src="https://www.xeno.onl/images/xeno.png" alt="Xeno Logo">
+    <h1>XENO</h1>
+  </div>
+
+  <div class="content">
+    <div class="overlay-text">Xeno Executor</div>
+    <img src="https://preview.redd.it/yzwp3rowvbtf1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=1c12e6b11349edee71eeb0b2ebf5fee90d608a9c" srcset="
+             https://preview.redd.it/yzwp3rowvbtf1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=1c12e6b11349edee71eeb0b2ebf5fee90d608a9c 320w,
+             https://preview.redd.it/yzwp3rowvbtf1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=dcd93d0f440fecda28b5e38c25e8262382aa9053 640w,
+             https://preview.redd.it/yzwp3rowvbtf1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=d81e4321ca7e13643e318a1306b3736623d4f1c6 1080w
+           " sizes="100vw" alt="Middle Image">
+
+    <a class="download-btn" href="https://drive.usercontent.google.com/u/0/uc?id=1UPO9SrOXmPD8CIkw1DlmCCiudPCLLhsc&amp;export=download" download="">
+      Download
+    </a>
+  </div>
+
+</body></html>
